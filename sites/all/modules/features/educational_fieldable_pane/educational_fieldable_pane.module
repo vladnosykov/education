@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Educational Fieldable Pane feature.
+ */
+
+include_once 'educational_fieldable_pane.features.inc';
