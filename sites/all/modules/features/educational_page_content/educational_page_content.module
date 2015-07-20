@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Educational Page Content feature.
+ */
+
+include_once 'educational_page_content.features.inc';

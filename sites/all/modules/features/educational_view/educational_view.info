@@ -1,0 +1,14 @@
+name = Educational View
+description = Adds a View to Educational Page
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[views_view][] = educational_view
+project path = sites/all/modules/features
