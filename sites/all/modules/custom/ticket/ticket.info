@@ -1,0 +1,7 @@
+name = Ticket
+description = Provides a new Ticket entity
+core = 7.x
+package = Education
+version = 7.x-1.0
+
+dependencies[] = data

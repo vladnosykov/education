@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Install file for a ticket entity
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function ticket_schema() {
+  $schema = array();
+
+  $schema['ticket'] = array(
+    'description' => 'The base table for ticket entity.',
+    'fields' => array(
+      'ticket_id' => array(
+        'description' => 'Primary key of the ticket entity.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'ticket_title' => array(
+        'description' => 'The title of a ticket',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+      ),
+      'ticket_type' => array(
+        'description' => 'The ticket type',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'default' => 'standart',
+      ),
+      'ticket_price' => array(
+        'description' => 'A price of the ticket',
+        'type' => 'float',
+        'not null' => FALSE,
+        'default' => 0.0,
+      ),
+      'ticket_validto' => array(
+        'description' => 'Ticket expiration date',
+        'type' => 'varchar',
+        'mysql_type' => 'DATETIME',
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('ticket_id'),
+  );
+
+  return $schema;
+}
