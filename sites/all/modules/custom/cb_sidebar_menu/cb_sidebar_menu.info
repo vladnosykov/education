@@ -1,0 +1,4 @@
+name = CB Sidebar Menu
+description = Provides a panels pane with a menu
+core = 7.x
+dependencies[] = ctools
